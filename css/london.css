@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #0a2a43;
+    min-height: 1500px;
+}
+
+.parallax{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #0a2a43;
+    z-index: 100;
+}
+
+.parallax::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    /* background: linear-gradient(to top, #0a2a43, transparent); */
+
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text{
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+    margin: 0;
+    font-size: 150px;
+    color: rgba(225,225,225, .01);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: -200px;
+}
+
+#city{
+    z-index: 2;
+}
+
+#menu{
+    width: 100%;
+    height: 50px;
+    background-color: #0a2a43;
+}
+
+.content{
+    width: 70%;
+    height: 200vh;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}     
+
+.content-header{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 102;
+    position: relative;
+    top: 200px;
+    left: 185px;
+}
+
+.content-header h1{
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    text-align: end;
+}
+
+.content-header p{
+    text-align: end;
+    font-size: 12px;
+}
+
+.content #bigben{
+    width: 60%;
+    height: auto;
+    left: 495px;
+    top: -100px;
+    position: relative;
+}
+
+.content-photos {
+    width: 65%;
+    height: 500px;
+    position: relative;
+    top: -425px;
+    left: -120px;
+}
+
+.content-photos h1{
+    font-size: 20px;
+}
+
+.content div img{
+    width: 150px;
+    height: 150px;
+}
+
+#hotel{
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: -350px;
+    left: -120px;
+}
+
+.hotel-photos{    
+    position: relative;
+    width: 55%;
+    left: 600px;
+    top: -800px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.hotel-photos h1{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+.hotel-photos div img{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.booking{    
+    width: 150%;
+    height: 800px;
+    background-color: #a2afb93b;
+    position: relative;
+    padding-top: 30px;
+    top: -640px;
+    left: -200px;
+}
+
+.booking form{
+    flex:1 1 40rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background-color: #fff;
+    width: 80%;
+    margin-left: 7%;
+}
+
+.booking form .inputBox{
+    padding:.5rem 0;
+}
+
+.booking form .inputBox input{
+    width:100%;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+}
+
+.booking form .inputBox h3{
+    font-size: 2rem;
+    padding:1rem 0;
+    color:#666;
+}
+
+.pricing {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff1f3;
+    overflow: hidden;
+}
+
+/* .swiper-container{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+} */
+
+.swiper {
+width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 280px;
+height: 370px;
+background: #dbe1e6;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 15px 50px rgba(0,0,0,.2);
+filter: blur(4px);
+}
+
+.swiper-slide h2{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+font-size: 24px;
+text-align: center;
+margin-top: 30px;
+font-weight: 700;
+border-bottom: 1px solid black;
+
+}
+
+.swiper-slide ul{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+list-style: none;
+text-align: start;
+padding-top: 15px;
+}
+
+.swiper-slide ul li i{
+    margin-right: 10px;
+}
+.swiper-slide ul li{
+    margin-bottom: 5px;
+}
+
+
+.fa-circle-check, .swiper-slide ul li:nth-child(-n+3){
+    font-size: 15px;
+    color: green;
+}
+
+.fa-circle-xmark, .swiper-slide ul li:nth-last-child(-n+4){
+    font-size: 15px;
+    color: red;
+}
+
+.swiper-slide span{
+    font-size: 24px;
+    display: table;
+    margin: 15px auto 0 auto;
+}
+
+.swiper-slide input{
+    margin-left: 25%;
+    margin-top: 0px;
+}
+
+.swiper-slide-active{
+    filter: blur(0px);
+    background: #fff;
+}
+
+.explore{
+    position: relative;
+    width: 70%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dde3e9;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.explore h1, .explore span{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.explore span{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+
+}
+
+
+
+@keyframes animate {
+    0%, 100% {
+    background-position: left top;
+    }
+    25%{
+    background-position: right bottom;
+    }
+    50% {
+    background-position: left bottom;
+    }
+    75% {
+    background-position: right top;
+    }
+       
+}
