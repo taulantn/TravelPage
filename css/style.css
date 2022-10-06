@@ -118,10 +118,10 @@ section{
     font-size: 1.7rem;
   }
   
-  .btn:hover{
+  /* .btn:hover{
     background:rgba(255, 165, 0,.2);
     color:#ff4432;
-  }
+  } */
   
   header{
     position: fixed;
@@ -328,9 +328,9 @@ section{
 
 .packages .box-container .box{
   flex:1 1 30rem;
-  border-radius: .5rem;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 10px;
 }
 
 .packages .box-container .box img{
@@ -544,6 +544,7 @@ footer{
 
 
 #button {
+  height: 7vh;
   color: var(--white);
   text-transform: uppercase;
   font-size: var(--fs-5);
@@ -551,6 +552,7 @@ footer{
   padding: var(--padding, 8px 18px);
   border: var(--border-width, 2px) solid transparent;
   transition: var(--transition);
+  align-items: center;
 }
 .btn-primary {
   background: var(--bright-navy-blue);
