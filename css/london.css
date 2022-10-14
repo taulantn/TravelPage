@@ -56,14 +56,14 @@ body{
     margin: 0;
     font-size: 150px;
     color: rgba(225,225,225, .01);
-    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png");
     background-repeat: repeat;
     -webkit-background-clip:text;
     animation: animate 15s ease-in-out infinite;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    margin-top: -200px;
+    top: -150px;
 }
 
 #city{
@@ -78,7 +78,7 @@ body{
 
 .content{
     width: 70%;
-    height: 200vh;
+    height: 4400px;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -122,21 +122,70 @@ body{
 }
 
 .content-photos {
-    width: 65%;
+    /* width: 65%; */
     height: 500px;
     position: relative;
-    top: -425px;
-    left: -120px;
+    padding: 0px;
+    /* top: -425px;
+    left: -120px; */
 }
 
 .content-photos h1{
-    font-size: 20px;
+    width: 45%;
+    font-size: 50px;
+    position: relative;
+    left: 50px;
+    top: -70px;
+
 }
 
-.content div img{
+.content-photos img{
     width: 150px;
     height: 150px;
 }
+
+.content-photos article{
+    width: 100%;
+    height: 410px;
+}
+
+.content-photos article img{
+    margin: 10px 0px 0px 10px;
+    width: 500px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.content-photos article div{
+    width: 500px;
+    height: 335px;
+    background: #6698be4a;
+    position: relative;
+    top: -300px;
+    left: 50px;
+    z-index: 5;
+}
+
+.content-photos article h2{
+    position: relative;
+    top: -510px;
+    left: 665px;
+    font-size: 30px;
+    background: #6698be4a;
+    width: fit-content;
+}
+
+.content-photos article p{
+    position: relative;
+    top: -500px;
+    left: 679px;
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+}
+
+
 
 #hotel{
     width: 70%;
@@ -273,12 +322,12 @@ padding-top: 15px;
 }
 
 
-.fa-circle-check, .swiper-slide ul li:nth-child(-n+3){
+.green-text{
     font-size: 15px;
     color: green;
 }
 
-.fa-circle-xmark, .swiper-slide ul li:nth-last-child(-n+4){
+.red-text{
     font-size: 15px;
     color: red;
 }

@@ -65,7 +65,8 @@
 
 
 *{
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
   text-transform: capitalize;
@@ -97,7 +98,7 @@ section{
 
 .heading span{
   font-size: 3.5rem;
-  background:rgba(255, 165, 0,.2);
+  background:#ff43321f;
   color:#ff4432;
   border-radius: .5rem;
   padding:.2rem 1rem;
@@ -356,6 +357,13 @@ section{
   font-size:1.7rem;
   color:#666;
   padding:1rem 0;
+}
+.packages .box-container .box .content .stars {
+  margin-bottom: 1rem;
+}
+
+.packages .box-container .box .content span {
+ font-size: 14px;
 }
 
 .packages .box-container .box .content .stars i{
