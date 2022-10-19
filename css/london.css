@@ -56,7 +56,7 @@ body{
     margin: 0;
     font-size: 150px;
     color: rgba(225,225,225, .01);
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png");
+    background-image: url("https://media.istockphoto.com/vectors/united-kingdom-flag-realistic-waving-union-jack-vector-id1251660737?k=20&m=1251660737&s=612x612&w=0&h=Hd3fVDhA3KUaefIawI9jcyTFL7M_YZwO6wBxTu8bVxE=");
     background-repeat: repeat;
     -webkit-background-clip:text;
     animation: animate 15s ease-in-out infinite;
@@ -78,7 +78,7 @@ body{
 
 .content{
     width: 70%;
-    height: 3800px;
+    height: 3900px;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -279,7 +279,7 @@ body{
 }
 
 .hotel-content h2 {
-    width: 40%;
+    width: 50%;
     font-size: 75px;
     font-family: 'Gabriola', Times, serif;
     position: relative;
@@ -382,7 +382,7 @@ body{
 } */
 
 .swiper {
-width: 100%;
+width: 120%;
 padding-top: 50px;
 padding-bottom: 50px;
 }
@@ -396,7 +396,7 @@ background: #dbe1e6;
 border-radius: 20px;
 overflow: hidden;
 box-shadow: 0 15px 50px rgba(0,0,0,.2);
-filter: blur(4px);
+/* filter: blur(4px); */
 }
 
 .swiper-slide h2{
