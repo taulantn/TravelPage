@@ -4,15 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contactus.css">
     <title>Contact Us</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" name="" id="" placeholder="username"><br>
-        <input type="text" name="" id="" placeholder="name "><br>
-        <input type="text" name="" id="" placeholder="Last Name"><br>
-        <input type="password" name="" id="" placeholder="Pasword"><br>
-        <button>Contact now</button>
-    </form>
+     <!-- Header -->
+     <header>
+        <div id="menu-bar"></div>
+        <a href="index.html" class="logo"><span>DUA</span> Travel</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="book.html">Book</a>
+            <a href="packages.html">Packages</a>
+            <a href="services.html">Services</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Review.html">Review</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" name="" id="search-bar" placeholder="What are you looking for?">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- End of Header -->
+
+    <main class="main">
+    <div class="container">
+        <span class="big-circle"></span>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    For every uncertainty or problem you can get in touch with our
+                    support team who is in your service 24/7!
+                </p>
+    
+                <div class="info">
+                    <div class="information">
+                        <img src="assets/map.png" class="icon" alt="" />
+                        <p>Dua Travel Headquarters, Prishtine 10000</p>
+                    </div>
+                    <div class="information">
+                        <img src="assets/email.png" class="icon" alt="" />
+                        <p>support@duatravel.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="assets/telephone-call.png" class="icon" alt="" />
+                        <p>+1 245-965-485</p>
+                    </div>
+                </div>
+    
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+    
+                <form onsubmit="return validate()" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div id="error_message"></div>
+                    <div class="input-container">
+                        <input type="text" name="name" id="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div id="error_message1"></div>
+                    <div class="input-container">
+                        <input type="email" name="email" id="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div id="error_message2"></div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" id="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div id="error_message3"></div>
+                    <div class="input-container textarea">
+                        <textarea name="message" id="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+</footer>
+    <script src="js/contactus.js"></script>
 </body>
 </html>
