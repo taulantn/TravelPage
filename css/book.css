@@ -3,6 +3,7 @@
 :root{
   --light-clr: #fff;
   --dark-clr: #504f4f;
+  --light-red: #b73434;
   --accent-clr: #00cc90;
   --accent-wlr: #1b9bbe;
 
@@ -417,6 +418,152 @@ header .search-bar-container label:hover{
 
 }
 
+/* Popup */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10rem; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+  backdrop-filter: blur(5px);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ff0000;
+  margin: auto;
+  padding: 5px;
+  border: 0px solid rgb(111, 70, 70);
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+  display: flex;
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: -40px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.panel-container {
+	background-color: #222;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	display: flex;
+	height: 70vh;
+  border-radius: 2px solid black;
+	/* width: 70vw; */
+	/* max-width: 800px; */
+}
+
+.left {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	position: relative;
+	width: calc(50% - 10px);
+}
+
+.left h2 {
+	margin: 0;
+}
+
+.left h3 {
+	border-bottom: 1px solid #333;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 30px 0 0;
+}
+
+.left p {
+	color: #ad4444;
+	font-weight: 500;
+	font-size: 13px;
+	margin: 3px 0;
+}
+
+.left .price{
+  font-size: 2rem;
+  color:rgb(255, 255, 255);
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.left .price span{
+  color:#666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.left button {
+	background-color: transparent;
+	border: 1px solid #ad4444;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 500;
+	padding: 15px 30px;
+	margin-top: auto;
+}
+
+.left button:hover{
+  background-color: var(--light-red);
+  color: var(--light-clr);
+}
+
+.left::after {
+	border-top: 0 solid transparent;
+	border-bottom: 70vh solid transparent;
+	border-left: 30px solid #222;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 0%;
+	width: 0;
+}
+
+.right {
+	background-image: url('../assets/turtle-bay-resort.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: calc(50% + 20px);
+}
+
+
+
+/* .right:nth-child(1){
+	background-image: url('../assets/lux-voyager.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: calc(50% + 20px);
+} */
+
 /* Footer */
 
 footer{
@@ -555,5 +702,23 @@ footer{
     .image-box-right .beach-data-inner{
       width: 100%;
     }
+}
+
+@media screen and (max-width: 700px) {
+	.left {
+		width: 100%;
+	}
+	
+	.left::after {
+		display: none;
+	}
+	
+	.left h3 {
+		margin-top: 20px;
+	}
+	
+	.right {
+		display: none;
+	}
 }
 
