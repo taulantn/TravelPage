@@ -89,9 +89,33 @@ function loadDocc1() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
+     document.getElementById("demo1").innerHTML = this.responseText;
     }
   };
   xhttp.open("GET", "london.html", true);
+  xhttp.send();
+}
+
+
+function loadDocc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo2").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "cappadocia.html", true);
+  xhttp.send();
+}
+
+
+function loadDo() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("dem").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "sydney.html", true);
   xhttp.send();
 }
